@@ -58,7 +58,7 @@ public class MessageSender {
             sendMessage(session, producer);
             // 提交会话
             session.commit();
-            
+            //抛异常
         } catch (Exception e) {
             throw e;
         } finally {
