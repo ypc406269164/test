@@ -15,8 +15,6 @@ import org.apache.activemq.ActiveMQConnectionFactory;
  */
 public class MessageSender {
  
-    // 发送次数+1
-	//2测试添加内容 
     public static final int SEND_NUM = 5;
     // tcp 地址
     public static final String BROKER_URL = "tcp://localhost:61616";
@@ -58,7 +56,6 @@ public class MessageSender {
             sendMessage(session, producer);
             // 提交会话
             session.commit();
-            //抛异常
         } catch (Exception e) {
             throw e;
         } finally {
@@ -73,7 +70,6 @@ public class MessageSender {
     }
     
     public static void main(String[] args) throws Exception {
-		//消息启动类
         MessageSender.run();
     }
 }
