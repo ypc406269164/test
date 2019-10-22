@@ -16,6 +16,7 @@ import org.apache.activemq.ActiveMQConnectionFactory;
 public class MessageSender {
  
     // 发送次数+1
+	//2测试添加内容
     public static final int SEND_NUM = 5;
     // tcp 地址
     public static final String BROKER_URL = "tcp://localhost:61616";
