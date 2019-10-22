@@ -73,6 +73,7 @@ public class MessageSender {
     }
     
     public static void main(String[] args) throws Exception {
+		//消息启动类
         MessageSender.run();
     }
 }
