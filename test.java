@@ -58,15 +58,7 @@ public class MessageSender {
             session.commit();
         } catch (Exception e) {
             throw e;
-        } finally {
-            // 关闭释放资源
-            if (session != null) {
-                session.close();
-            }
-            if (connection != null) {
-                connection.close();
-            }
-        }
+        } 
     }
     
     public static void main(String[] args) throws Exception {
